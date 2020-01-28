@@ -1,0 +1,149 @@
+		<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+	.txt{
+
+			color: white;						}
+		}
+		.pqr
+		{
+
+		}
+	div
+	{
+		border: 1px solid black;
+		height: 490px;
+		width: 800px;
+		margin: auto;
+
+	}	
+	form
+	{
+		align-content: center;
+		margin:  ;
+	}
+	input
+	{
+		margin left: 100px;
+		
+
+	}
+	#abc
+	{
+		width: 100px;
+	}
+	hr
+	{
+		width: 500px;
+		margin: auto;
+		border-color: red;
+	}
+	</style>
+	<script type="text/javascript">
+		function v1() 
+		{
+			var x=document.getElementById('x1').value;
+			if (x=="") {
+				document.getElementById('a1').innerHTML="&nbsp;&nbsp;*Required";
+				document.getElementById('a1').style.color="red";
+				document.getElementById('x1').focus();	
+			} 
+			else
+			{
+				document.getElementById('a1').innerHTML="";
+			}
+		
+			
+		}
+		function v2() 
+		{
+			var x=document.getElementById('x2').value;
+			if (x=="") {
+				document.getElementById('a2').innerHTML="&nbsp;&nbsp;*Required";
+			
+				document.getElementById('a2').style.color="red";
+				document.getElementById('x2').focus();			
+			} 
+			else
+			{
+				document.getElementById('a2').innerHTML="";
+			}
+			
+		}
+		function v3() 
+		{
+			var x=document.getElementById('x3').value;
+			if (x=="") {
+				document.getElementById('a3').innerHTML="&nbsp;&nbsp;*Required";
+				document.getElementById('a3').style.color="red";
+				document.getElementById('x3').focus();
+			}
+			else
+			{
+				document.getElementById('a3').innerHTML="";
+			} 
+		}
+		function v4() 
+		{
+			var x=document.getElementById('x4').value;
+				if (x=="" || x.indexOf('@')<=0 || x.indexOf('.')==-1 || x.LastindexOf('.')==y.length-1 || 
+					x.LastindexOf('.')-x.indexOf('@')<2 || x.indexOf('@')!=x.LastindexOf('@')
+
+
+
+				) {
+				document.getElementById('a4').innerHTML="&nbsp;&nbsp;*Required or Not Valid";
+				document.getElementById('a4').style.color="red";
+				document.getElementById('x4').focus();
+			} 
+		
+				else
+			{
+				document.getElementById('a4').innerHTML="";	
+		}
+	}
+	</script>
+</head>
+<body style="background-image: url('abc.png');">
+<h1 style="text-align: center;"><b style="color: white;"> Registration Form</h1><br>
+<hr>
+<br>
+
+<div style="border-width: 10px;border-color:green ">
+<br>
+<form>
+<ul type="square">
+ 	<li><i class="txt">First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  align="center" type="text" name="" id="x1" onblur="v1()"><span id="a1"></span><br><br>
+
+	 <li><i class="txt">Middle Name:&nbsp;&nbsp;&nbsp;&nbsp; 	 <input align="center" type="text" name="" id="x2" onblur="v2()"><span id="a2"></span><br><br>
+
+	 <li><i class="txt">Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input align="center" type="text" name="" id="x3" onblur="v3()"><span id="a3"></span><br><br>
+
+ 	<li><i class="txt">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input align="center" type="radio" name="Gender" > Male <input type="radio" name="Gender">Female<br><br>
+
+ 	<li><i class="txt">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="Email" id="x4" onblur="v4()" name=""><span id="a4"></span><br><br>
+
+ 	<li><i class="txt">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="Password" name=""><br><br>
+
+	<li><i class="txt">Confirm:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="Password" name=""><br><br>
+
+ 	<li><i class="txt">Branch:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select>
+ 	<option>CE</option>
+ 	<option>CSE</option>
+ 	<option>IT</option>
+ 	</select><br><br>
+
+ 	<li><i class="txt">Date of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="Date" name=""><br><br>
+
+ 	<li><i class="txt">Photo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="file" name= "" value="Choose File"><br><br>
+
+</ul>
+<pre>
+        <input id="abc" type="submit" name="">  <input id="abc" type="reset"  value="Reset" name="">
+</pre> 	
+</form>
+</div>
+</body>
+</html>
